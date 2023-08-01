@@ -1,6 +1,5 @@
 .about-project {
     background: #202020;
-    min-width: 320px;
     margin: 0;
     padding: 70px 18px;
 }
@@ -35,7 +34,6 @@
     }
 }
 
-
 .about-project__main-title {
     display: flex;
     flex-direction: column;
@@ -50,6 +48,23 @@
     }
 }
 
+.part-about {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+    .part-about {
+        font-size: 22px;
+    }
+}
+
+
 .about-project__title {
     color: #FFF;
     font-family: Inter, Arial, sans-serif;
@@ -62,7 +77,7 @@
 
 @media screen and (min-width: 768px) {
     .about-project__title {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -113,16 +128,15 @@
     }
 }
 
-.about-project__line {
+.part-about__line {
     all: unset;
-    min-width: 284px;
     height: 1px;
     background-color: #DADADA;
     margin: 28px 0 60px;
 }
 
 @media screen and (min-width: 768px) {
-    .about-project__line {
+    .part-about__line{
         margin: 23px 0 70px;
     }
 }
@@ -191,6 +205,12 @@
 }
 
 .about-project__work_type_frontend {
-    flex: 4;
+    flex: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .about-project__work_type_frontend {
+        flex: 4;
+    }
 }
 

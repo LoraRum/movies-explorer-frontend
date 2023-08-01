@@ -5,9 +5,9 @@ const NavTab = () => {
   return (
     <section className={"project"}>
       <div className={"project__container"}>
-        <h2 className={"project__title"}>
+        <h1 className={"project__title"}>
           Учебный проект студента факультета Веб-разработки.
-        </h2>
+        </h1>
         <ul className={"project__button"}>
           <li>
             <Button type={"default"}>О проекте</Button>

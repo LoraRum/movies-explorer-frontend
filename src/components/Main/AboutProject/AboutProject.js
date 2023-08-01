@@ -5,8 +5,8 @@ const AboutProject = () => {
     <section className={"about-project"}>
       <div className={"about-project__container"}>
         <div className={"about-project__main-title"}>
-          <h2 className={"about-project__title"}>О проекте</h2>
-          <hr className={"about-project__line"}></hr>
+          <h2 className={"part-about"}>О проекте</h2>
+          <hr className={"part-about__line"}></hr>
         </div>
 
         <div
