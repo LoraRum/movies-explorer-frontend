@@ -1,0 +1,120 @@
+.button {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button_type_default {
+    min-width: 82px;
+    height: 26px;
+    border-radius: 6px;
+    background: #303030;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .button_type_default {
+        min-width: 96px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .button_type_default {
+        border-radius: 10px;
+    }
+}
+
+.button_type_header {
+    box-sizing: border-box;
+    height: 26px;
+    border-radius: 3px;
+    background: #3DDC84;
+    color: #000;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 5px 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .button_type_header {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
+
+.button_type_search {
+    width: 80px;
+    height: 34px;
+    border-radius: 48px;
+    background-color: #4285F4;
+
+}
+
+.button_type_link {
+    box-sizing: border-box;
+    color: #FFF;
+    text-align: right;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 5px 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .button_type_link {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
+
+.button_type_more {
+    min-width: 240px;
+    height: 36px;
+    border-radius: 6px;
+    background: #2F2F2F;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .button_type_more{
+        width: 320px;
+    }
+}
+
+.button_type_blue {
+    width: 260px;
+    height: 45px;
+    border-radius: 3px;
+    background: #4285F4;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .button_type_blue{
+        width: 396px;
+        font-size: 14px;
+    }
+}
+
+
