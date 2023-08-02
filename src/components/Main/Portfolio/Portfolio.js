@@ -28,7 +28,7 @@ const Portfolio = () => {
       </div>
       <p className={"portfolio__text"}>Портфолио</p>
       <div className={"portfolio__links"}>
-        <a className={"portfolio__link"}>
+        <a className={"portfolio__link"} target={"_blank"}>
           <p className={"portfolio__title"}>Статичный сайт</p>
           <img className={"portfolio__image"} src={Arrow}></img>
         </a>
@@ -38,7 +38,7 @@ const Portfolio = () => {
           }
         ></hr>
 
-        <a className={"portfolio__link"}>
+        <a className={"portfolio__link"} target={"_blank"}>
           <p className={"portfolio__title"}>Адаптивный сайт</p>
           <img className={"portfolio__image"} src={Arrow}></img>
         </a>
@@ -47,7 +47,7 @@ const Portfolio = () => {
             "part-about__line part-about__line_small part-about__line_dark"
           }
         ></hr>
-        <a className={"portfolio__link"}>
+        <a className={"portfolio__link"} target={"_blank"}>
           <p className={"portfolio__title"}>Одностраничное приложение</p>
           <img className={"portfolio__image"} src={Arrow}></img>
         </a>
