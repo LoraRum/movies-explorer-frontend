@@ -32,13 +32,21 @@ const Portfolio = () => {
           <p className={"portfolio__title"}>Статичный сайт</p>
           <img className={"portfolio__image"} src={Arrow}></img>
         </a>
-        <hr className={"part-about__line part-about__line_small"}></hr>
+        <hr
+          className={
+            "part-about__line part-about__line_small part-about__line_dark"
+          }
+        ></hr>
 
         <a className={"portfolio__link"}>
           <p className={"portfolio__title"}>Адаптивный сайт</p>
           <img className={"portfolio__image"} src={Arrow}></img>
         </a>
-        <hr className={"part-about__line part-about__line_small"}></hr>
+        <hr
+          className={
+            "part-about__line part-about__line_small part-about__line_dark"
+          }
+        ></hr>
         <a className={"portfolio__link"}>
           <p className={"portfolio__title"}>Одностраничное приложение</p>
           <img className={"portfolio__image"} src={Arrow}></img>
