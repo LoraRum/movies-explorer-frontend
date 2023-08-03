@@ -5,9 +5,9 @@
     flex-direction: column
 }
 
- .search__form{
-     position: relative;
- }
+.search__form {
+    position: relative;
+}
 
 .button_type_search {
     width: 80px;
@@ -19,27 +19,41 @@
     top: 19px;
 }
 
- .search__film{
+@media screen and (min-width: 768px) {
+    .button_type_search {
+        right: 227px;
+        top: 19px;
+    }
+}
 
-     min-width: 300px;
-     height: 72px;
- }
+@media screen and (min-width: 768px) {
+    .toggle-switch-container {
+        position: absolute;
+        top: 27px;
+        right: 20px;
+    }
+}
 
- .input {
-     all: unset;
-     border-radius: 9px;
-     background-color: #2F2F2F;
-     color: #8B8B8B;
-     font-family: Inter, Arial, sans-serif;
- }
+.part-about__line_vertical {
+    margin: 0;
+    display: none;
+}
 
-.input_type_search{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 25px 19px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+@media screen and (min-width: 768px) {
+    .part-about__line_vertical {
+        all: unset;
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        transform: rotate(90deg);
+        background-color: #505050;
+        top: 35px;
+        right: 180px;
+        margin: 0;
+    }
+}
+
+.search__icon {
+    color: #FFFFFF;
+    margin-top: 6px;
 }

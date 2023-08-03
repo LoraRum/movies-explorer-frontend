@@ -1,0 +1,59 @@
+.search__film {
+    min-width: 300px;
+    height: 72px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    all: unset;
+    border-radius: 9px;
+    background-color: #2F2F2F;
+    color: #8B8B8B;
+    font-family: Inter, Arial, sans-serif;
+}
+
+.input_type_search {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 25px 50px 25px 19px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .input_type_search {
+        padding-left: 63px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .toggle-switch-container {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin: 0;
+    }
+}
+
+.search__image {
+    margin: 0;
+    width: 34px;
+    height: 34px;
+    display: none;
+    color: #8B8B8B
+}
+
+@media screen and (min-width: 768px) {
+    .search__image {
+        display: unset;
+        position: absolute;
+        margin: 12px 0 0 19px;
+    }
+}

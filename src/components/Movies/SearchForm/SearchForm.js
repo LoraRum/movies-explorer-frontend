@@ -1,28 +1,28 @@
+import React from "react";
 import "./SearchForm.css";
 import Button from "../../GeneralPagesComponent/Button/Button";
 import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+import SearchInput from "../SearchInput/SearchInput";
+import Search from "../../../images/search.svg";
+import { IconSearch } from "../IconSearch/IconSearch";
 
 const SearchForm = () => {
+  const searchButton = (
+    <Button type={"search"} to="/signup" className="search__button">
+      <div className={"search__icon"}>
+        <IconSearch />
+      </div>
+    </Button>
+  );
+
   return (
     <section className={"search"}>
       <div className={"search__form"}>
-        <form className={"search__film"}>
-          <input
-            className="input input_type_search"
-            id="search"
-            maxLength="50"
-            minLength="2"
-            name="search"
-            placeholder="Фильм"
-            required
-            type="text"
-          ></input>
-        </form>
-        <Button type={"search"} to="/signup"></Button>
+        <SearchInput searchButton={searchButton} />
+        <FilterCheckbox />
+        <hr className={"part-about__line_vertical"}></hr>
       </div>
-
-      <FilterCheckbox></FilterCheckbox>
-      <hr className={"part-about__line part-about__line_footer"}></hr>
+      <hr className={"part-about__line part-about__line_footer"} />
     </section>
   );
 };
