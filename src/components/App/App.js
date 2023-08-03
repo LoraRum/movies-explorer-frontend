@@ -6,6 +6,7 @@ import AboutProject from "../Main/AboutProject/AboutProject";
 import Techs from "../Main/Techs/Techs";
 import Portfolio from "../Main/Portfolio/Portfolio";
 import Footer from "../GeneralPagesComponent/Footer/Footer";
+import SearchForm from "../Movies/SearchForm/SearchForm";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Techs></Techs>
       <Portfolio></Portfolio>
       <Footer></Footer>
+      <SearchForm></SearchForm>
     </div>
   );
 }
