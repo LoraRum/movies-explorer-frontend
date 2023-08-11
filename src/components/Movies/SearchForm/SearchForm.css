@@ -5,6 +5,18 @@
     flex-direction: column
 }
 
+@media screen and (min-width: 768px) {
+    .search{
+        padding: 80px 30px 120px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .search{
+        padding: 70px 70px 70px;
+    }
+}
+
 .search__form {
     position: relative;
 }

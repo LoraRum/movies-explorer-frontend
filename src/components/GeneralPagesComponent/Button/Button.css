@@ -83,6 +83,7 @@
 
 .button_type_more {
     min-width: 240px;
+    max-width: 320px;
     height: 36px;
     border-radius: 6px;
     background: #2F2F2F;
@@ -90,11 +91,13 @@
     font-size: 12px;
     font-weight: 500;
     line-height: normal;
+    margin: 50px auto 80px;
 }
 
 @media screen and (min-width: 768px) {
     .button_type_more{
         width: 320px;
+        margin: 40px auto 80px;
     }
 }
 

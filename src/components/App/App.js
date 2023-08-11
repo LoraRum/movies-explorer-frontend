@@ -7,6 +7,7 @@ import Techs from "../Main/Techs/Techs";
 import Portfolio from "../Main/Portfolio/Portfolio";
 import Footer from "../GeneralPagesComponent/Footer/Footer";
 import SearchForm from "../Movies/SearchForm/SearchForm";
+import MoviesCardList from "../Movies/MoviesCardList/MoviesCardList";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Portfolio></Portfolio>
       <Footer></Footer>
       <SearchForm></SearchForm>
+      <MoviesCardList></MoviesCardList>
     </div>
   );
 }

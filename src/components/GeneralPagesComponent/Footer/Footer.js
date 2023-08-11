@@ -5,8 +5,7 @@ const Footer = () => {
     <section className={"footer"}>
       <div className={"footer__info"}>
         <p className={"footer__title"}>
-          Учебный проект Яндекс.Практикум х BeatFilm. Яндекс.Практикум Github
-          ©2020
+          Учебный проект Яндекс.Практикум х BeatFilm.
         </p>
         <hr className={"part-about__line part-about__line_footer"}></hr>
       </div>
