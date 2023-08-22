@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./MoviesCard.css";
 import PropTypes from "prop-types";
+import LikeButton from "../LikeButton/LikeButton";
+import CloseButton from "../CloseButton/CloseButton";
 
-const MoviesCard = ({ title, duration, liked, imageUrl }) => {
+const MoviesCard = ({ title, duration, liked, imageUrl, isSaved = false }) => {
   const [like, setLike] = useState(liked);
+  const handleLikeClick = () => {
+    setLike(!like);
+  };
 
   return (
     <div className="movies-card">
@@ -14,10 +19,11 @@ const MoviesCard = ({ title, duration, liked, imageUrl }) => {
           <p className="movies-card__time">{duration}</p>
         </div>
 
-        <div
-          onClick={() => setLike(!like)}
-          className={like ? "movies-card__like_active" : "movies-card__like"}
-        ></div>
+        {isSaved ? (
+          <CloseButton onClick={() => {}} />
+        ) : (
+          <LikeButton liked={like} onClick={handleLikeClick} />
+        )}
       </div>
     </div>
   );

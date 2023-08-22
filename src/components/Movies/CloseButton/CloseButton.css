@@ -1,0 +1,13 @@
+.movies-card__delete {
+    all: unset;
+    background-image: url(../../../images/close_icon.svg);
+    text-decoration: none;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 14px;
+    height: 12px;
+    order: 3;
+}

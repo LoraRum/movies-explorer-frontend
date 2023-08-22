@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import BurgerButton from "../../../images/burger-button.svg";
-import CloseButton from "../../../images/close icon.svg";
+import CloseButton from "../../../images/close_icon.svg";
 import { Link } from "react-router-dom";
 
 function Navigation() {
