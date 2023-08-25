@@ -10,7 +10,11 @@ const Portfolio = () => {
         <hr className={"part-about__line"}></hr>
       </div>
       <div className={"portfolio__container"}>
-        <img className={"portfolio__photo"} src={Photo}></img>
+        <img
+          className={"portfolio__photo"}
+          src={Photo}
+          alt={"фото профиля"}
+        ></img>
         <div className={"portfolio__description"}>
           <h2 className={"portfolio__name"}>Виталий</h2>
           <p className={"portfolio__work"}>Фронтенд-разработчик, 30 лет</p>
@@ -28,9 +32,17 @@ const Portfolio = () => {
       </div>
       <p className={"portfolio__text"}>Портфолио</p>
       <div className={"portfolio__links"}>
-        <a className={"portfolio__link"} target={"_blank"}>
+        <a
+          className={"portfolio__link"}
+          target={"_blank"}
+          href={"https://github.com/LoraRum/how-to-learn"}
+        >
           <p className={"portfolio__title"}>Статичный сайт</p>
-          <img className={"portfolio__image"} src={Arrow}></img>
+          <img
+            className={"portfolio__image"}
+            src={Arrow}
+            alt={"картинка"}
+          ></img>
         </a>
         <hr
           className={
@@ -38,18 +50,34 @@ const Portfolio = () => {
           }
         ></hr>
 
-        <a className={"portfolio__link"} target={"_blank"}>
+        <a
+          className={"portfolio__link"}
+          target={"_blank"}
+          href={"https://github.com/LoraRum/russian-travel"}
+        >
           <p className={"portfolio__title"}>Адаптивный сайт</p>
-          <img className={"portfolio__image"} src={Arrow}></img>
+          <img
+            className={"portfolio__image"}
+            src={Arrow}
+            alt={"картинка"}
+          ></img>
         </a>
         <hr
           className={
             "part-about__line part-about__line_small part-about__line_dark"
           }
         ></hr>
-        <a className={"portfolio__link"} target={"_blank"}>
+        <a
+          className={"portfolio__link"}
+          target={"_blank"}
+          href={"https://github.com/LoraRum/mesto"}
+        >
           <p className={"portfolio__title"}>Одностраничное приложение</p>
-          <img className={"portfolio__image"} src={Arrow}></img>
+          <img
+            className={"portfolio__image"}
+            src={Arrow}
+            alt={"картинка"}
+          ></img>
         </a>
       </div>
     </section>
