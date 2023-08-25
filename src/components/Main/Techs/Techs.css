@@ -1,0 +1,123 @@
+.techs {
+    margin: 0;
+    padding: 70px 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .techs {
+        padding: 90px 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .techs {
+        padding: 100px 70px;
+    }
+}
+
+.techs__about {
+    display: flex;
+    flex-direction: column;
+}
+
+.part-about__line_black {
+    background-color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .part-about__line_black {
+        background-color: #DADADA;
+    }
+}
+
+.techs__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 14px 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .techs__title {
+        font-size: 50px;
+        margin: 10px 84px 22px;
+        line-height: 58px
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .techs__title {
+        margin: 20px 270px 26px;
+    }
+}
+
+.techs__subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 14px 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .techs__subtitle {
+        font-size: 12px;
+        margin: 0 154px 83px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .techs__subtitle {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 340px 100px;
+    }
+}
+
+.techs__skills {
+    margin: 0 53px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+    justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .techs__skills {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .techs__skills {
+        margin: 0 225px;
+    }
+}
+
+.techs__skill {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 21px 0;
+    border-radius: 10px;
+    background: #303030;
+    width: 84px;
+}
+
+@media screen and (min-width: 1280px) {
+    .techs__skill {
+        font-size: 14px;
+    }
+}

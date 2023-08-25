@@ -1,0 +1,128 @@
+.menu__button {
+    all: unset;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__button:hover{
+        opacity: 0.6;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #202020;
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        left: 248px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        position: static;
+    }
+}
+
+.menu_screen_large {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu_screen_large {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 746px;
+    }
+}
+
+.menu_screen_small {
+    display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu_screen_small {
+        display: none;
+    }
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+    padding: 0 10px;
+    margin: 144px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__list {
+        padding: 0 90px;
+        row-gap: 28px;
+        margin-top: 159px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu__list {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        gap: 16px;
+        margin-left: 44px;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.menu__burger {
+    width: 40px;
+    height: 43px;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu__burger {
+        display: none;
+    }
+}
+
+.menu__button_close {
+    min-width: 22px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__button_close {
+        top: 22px;
+        right: 22px;
+    }
+}
+
+
+
+

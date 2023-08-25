@@ -1,0 +1,73 @@
+.filterCheckbox {
+    display: block;
+    text-align: center;
+}
+
+.toggle-switch-container {
+    display: flex;
+    justify-content: center;
+    margin: 46px 0 0;
+    align-items: center;
+    gap: 13px;
+}
+
+.filterCheckbox__films {
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFF;
+    margin: 0;
+}
+
+.switch {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 20px;
+}
+
+.switch__input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.switch__slider {
+    position: absolute;
+    cursor: pointer;
+    background: #ebebeb;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 4px 4px rgba(50, 50, 71, 0.08),
+    0 4px 8px rgba(50, 50, 71, 0.06);
+    border-radius: 16px;
+    transition: 0.4s;
+}
+
+.switch__slider::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    left: 2px;
+    bottom: 2px;
+    height: 26px;
+    width: 26px;
+    background: #f5f5f5;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch__input:checked + .switch__slider {
+    background: #2be080;
+}
+
+.switch__input:checked + .switch__slider::before {
+    transform: translateX(16px);
+}

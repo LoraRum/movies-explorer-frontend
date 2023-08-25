@@ -1,0 +1,19 @@
+.movies-cards-list  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .movies-cards-list {
+        padding: 60px 30px 50px;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .movies-cards-list {
+        padding: 70px 70px 10px;
+        gap: 40px;
+    }
+}

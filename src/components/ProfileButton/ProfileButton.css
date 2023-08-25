@@ -1,0 +1,46 @@
+.menu__account {
+    all: unset;
+    justify-content: center;
+    margin-top: 444px;
+    gap: 7px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__account {
+        margin-top: 621px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu__account {
+        margin: 0;
+        justify-content: space-between
+
+    }
+}
+
+
+.header__account-title {
+    color: #FFF;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.menu__circle {
+    height: 26px;
+    width: 26px;
+    background-color: #313131;
+    border-radius: 50%;
+    display: grid;
+}
+
+.menu__account_img {
+    background-color: #2F2F2F;
+    margin: auto;
+}
