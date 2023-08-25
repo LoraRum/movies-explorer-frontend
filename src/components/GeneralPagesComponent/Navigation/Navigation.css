@@ -1,5 +1,12 @@
-.menu__button{
+.menu__button {
     all: unset;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__button:hover{
+        opacity: 0.6;
+    }
 }
 
 .menu {
@@ -9,11 +16,41 @@
     bottom: 0;
     left: 0;
     background-color: #202020;
+    z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
     .menu {
         left: 248px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        position: static;
+    }
+}
+
+.menu_screen_large {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu_screen_large {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 746px;
+    }
+}
+
+.menu_screen_small {
+    display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu_screen_small {
+        display: none;
     }
 }
 
@@ -35,6 +72,16 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .menu__list {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        gap: 16px;
+        margin-left: 44px;
+    }
+}
+
 .menu__link {
     text-decoration: none;
     color: #FFF;
@@ -48,11 +95,18 @@
 
 .menu__link:hover {
     text-decoration: underline;
+    opacity: 0.8;
 }
 
 .menu__burger {
     width: 40px;
     height: 43px;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu__burger {
+        display: none;
+    }
 }
 
 .menu__button_close {
@@ -68,3 +122,7 @@
         right: 22px;
     }
 }
+
+
+
+

@@ -13,6 +13,7 @@ import MoviesSave from "../Movies/MoviesSave/MoviesSave";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import NotFound from "../NotFound/NotFound";
+import Profile from "../Profile/Profile";
 
 function App() {
   return (
@@ -67,6 +68,16 @@ function App() {
           element={
             <>
               <Login></Login>
+            </>
+          }
+        ></Route>
+
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Header isLoggedIn={true}></Header>
+              <Profile></Profile>
             </>
           }
         ></Route>

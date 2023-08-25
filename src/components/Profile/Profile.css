@@ -1,0 +1,121 @@
+.profile {
+    padding: 70px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .profile {
+        padding: 236px 179px 269px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .profile {
+        padding: 74px 435px 79px;
+    }
+}
+
+.profile__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__title{
+        margin-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .profile__title{
+        margin-bottom: 123px;
+    }
+}
+
+.profile__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    min-height: 30px;
+    cursor: text;
+    color: #FFF;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile__input {
+    all: unset;
+}
+
+
+.profile__button-change {
+    all: unset;
+    margin-top: 379px;
+    min-height: 16px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    background-color: #202020;;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__button-change{
+       margin-top: 210px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .profile__button-change{
+        margin-top: 220px;
+    }
+}
+
+.profile__button-change:hover {
+    opacity: 0.8;
+}
+
+.profile__button-logout {
+    all: unset;
+    margin-top: 16px;
+    min-height: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #EE3465;
+    cursor: pointer;
+}
+
+.profile__button-logout:hover {
+    opacity: 0.8;
+}
+
+.part-about__line_label{
+    margin: 16px 0;
+
+}
