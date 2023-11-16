@@ -33,6 +33,7 @@
         margin: 0 0 90px;
         flex-direction: row;
         column-gap: 50px;
+        justify-content: space-between
     }
 }
 
@@ -65,7 +66,6 @@
 .portfolio__photo {
     margin: 0;
     border-radius: 10px;
-    min-width: 292px;
     object-fit: contain;
 }
 
@@ -140,6 +140,7 @@
     .portfolio__hobby {
         font-size: 12px;
         line-height: 18px;
+        max-width: 364px;
     }
 }
 
@@ -178,15 +179,7 @@
 
 @media screen and (min-width: 768px) {
     .portfolio__text {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .portfolio__text {
         font-size: 18px;
-        line-height: 20px;
         margin: 0 0 50px;
     }
 }
@@ -196,6 +189,7 @@
     display: flex;
     row-gap: 20px;
     flex-direction: column;
+
 }
 
 .portfolio__link {
@@ -214,7 +208,22 @@
 
 .portfolio__image {
     color: #FFF;
-    object-fit: scale-down;
+    width: 18px;
+    height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio__image {
+        width: 28px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .portfolio__image {
+        width: 30px;
+        height: 60px;
+    }
 }
 
 .portfolio__group {

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Button.css";
+import { createElement, useMemo } from "react";
 
 const Button = ({ children, type = "default", to = null }) => {
   let typeClass;
@@ -30,13 +31,21 @@ const Button = ({ children, type = "default", to = null }) => {
       break;
   }
 
-  return to !== null ? (
-    <Link to={to} className={`button ${typeClass}`}>
-      {children}
-    </Link>
-  ) : (
-    <button className={`button ${typeClass}`}>{children}</button>
-  );
+  if (to === null) {
+    return <button className={`button ${typeClass}`}>{children}</button>;
+  } else if (to.includes("#")) {
+    return (
+      <a href={to} className={`button ${typeClass}`}>
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <Link to={to} className={`button ${typeClass}`}>
+        {children}
+      </Link>
+    );
+  }
 };
 
 export default Button;

@@ -7,7 +7,7 @@ const ProfileButton = () => {
     <Link to="/profile" className="menu__account">
       <h3 className="header__account-title">Аккаунт</h3>
       <div className={"menu__circle"}>
-        <img className={"menu__account_img"} src={Profile} alt={"account"} />
+        <img className={"menu__account-img"} src={Profile} alt={"account"} />
       </div>
     </Link>
   );

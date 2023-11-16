@@ -42,7 +42,7 @@ function Navigation() {
         <nav className="menu menu_screen_small">
           <button className="menu__button" onClick={closeMenu}>
             <img
-              className="menu__button_close"
+              className="menu__button-close"
               src={CloseButton}
               alt={"close"}
             />
@@ -73,7 +73,11 @@ function Navigation() {
       ) : (
         <nav className="menu__burger">
           <button className="menu__button" onClick={openMenu}>
-            <img src={BurgerButton} alt={"menu"} />
+            <img
+              className={"menu__button-img"}
+              src={BurgerButton}
+              alt={"menu"}
+            />
           </button>
         </nav>
       )}

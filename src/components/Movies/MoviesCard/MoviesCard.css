@@ -3,11 +3,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 10px 20px;
+    max-width: 1280px;
 }
 
 @media screen and (min-width: 768px) {
     .movies-card {
         flex-direction: row;
+        margin:0 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .movies-card {
+        margin:0 70px;
     }
 }
 
@@ -94,4 +103,9 @@
     .movies-card__like_active {
         order: 3;
     }
+}
+
+.movies-card__like,
+.movies-card__like_active:hover {
+    opacity: 0.6;
 }

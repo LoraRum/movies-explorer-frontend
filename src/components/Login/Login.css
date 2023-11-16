@@ -1,0 +1,9 @@
+.input__container-signin {
+    margin-bottom: 247px;
+}
+
+@media screen and (min-width: 768px) {
+    .input__container-signin {
+        margin-bottom: 159px;
+    }
+}

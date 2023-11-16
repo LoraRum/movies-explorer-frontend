@@ -8,17 +8,25 @@ const Promo = () => {
         <h1 className={"project__title"}>
           Учебный проект студента факультета Веб-разработки.
         </h1>
-        <ul className={"project__button"}>
-          <li>
-            <Button type={"default"}>О проекте</Button>
-          </li>
-          <li>
-            <Button type={"default"}>Технологии</Button>
-          </li>
-          <li>
-            <Button type={"default"}>Студент</Button>
-          </li>
-        </ul>
+        <nav>
+          <ul className={"project__button"}>
+            <li>
+              <Button to="#about" type={"default"}>
+                О проекте
+              </Button>
+            </li>
+            <li>
+              <Button to="#techs" type={"default"}>
+                Технологии
+              </Button>
+            </li>
+            <li>
+              <Button to="#about-me" type={"default"}>
+                Студент
+              </Button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
   );

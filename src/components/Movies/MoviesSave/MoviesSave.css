@@ -1,5 +1,11 @@
 .movies-save__interval {
     background: #202020;
-    height: 140px;
+    height: 120px;
     margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .movies-save__interval {
+        height: 100px;
+    }
 }

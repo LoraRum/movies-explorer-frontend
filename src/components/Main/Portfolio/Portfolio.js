@@ -1,10 +1,10 @@
 import "./Portfolio.css";
 import Photo from "../../../images/photo.png";
-import Arrow from "../../../images/arrow.png";
+import Arrow from "../../../images/Arrow.svg";
 
 const Portfolio = () => {
   return (
-    <section className={"portfolio"}>
+    <section className={"portfolio"} id="about-me">
       <div className={"portfolio__about"}>
         <div className={"part-about"}>Студент</div>
         <hr className={"part-about__line"}></hr>

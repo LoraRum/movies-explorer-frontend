@@ -3,10 +3,8 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-    .menu__button:hover{
-        opacity: 0.6;
-    }
+.menu__button:hover {
+    opacity: 0.6;
 }
 
 .menu {
@@ -86,7 +84,7 @@
     text-decoration: none;
     color: #FFF;
     font-family: Inter, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -109,7 +107,7 @@
     }
 }
 
-.menu__button_close {
+.menu__button-close {
     min-width: 22px;
     position: absolute;
     top: 13px;
@@ -117,9 +115,16 @@
 }
 
 @media screen and (min-width: 768px) {
-    .menu__button_close {
+    .menu__button-close {
         top: 22px;
         right: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu__button-img {
+        width: 44px;
+        height: 44px;
     }
 }
 

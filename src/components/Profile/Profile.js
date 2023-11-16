@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <section className="profile">
       <h2 className={"profile__title"}>Привет, Виталий!</h2>
-      <form className="profile__form">
+      <form id={"form"} className="profile__form">
         <label className="profile__label">
           Имя
           <input
@@ -14,6 +14,8 @@ const Profile = () => {
             required
             minLength="2"
             maxLength="30"
+            pattern="[a-zA-Z]+"
+            placeholder={"Имя"}
           />
         </label>
         <hr
@@ -28,10 +30,11 @@ const Profile = () => {
             className="profile__input"
             type="email"
             required
+            placeholder={"E-mail"}
           />
         </label>
       </form>
-      <button className="profile__button-change" type="submit">
+      <button form={"form"} className="profile__button-change" type="submit">
         Редактировать
       </button>
       <button type="submit" className="profile__button-logout">
