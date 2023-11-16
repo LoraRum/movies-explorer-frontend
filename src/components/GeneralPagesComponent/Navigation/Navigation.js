@@ -3,10 +3,11 @@ import BurgerButton from "../../../images/burger-button.svg";
 import CloseButton from "../../../images/close_icon.svg";
 import { Link } from "react-router-dom";
 import ProfileButton from "../../ProfileButton/ProfileButton";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Navigation() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const openMenu = () => {
     setOpen(true);
@@ -15,6 +16,19 @@ function Navigation() {
   const closeMenu = () => {
     setOpen(false);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -39,7 +53,7 @@ function Navigation() {
       </nav>
 
       {open ? (
-        <nav className="menu menu_screen_small">
+        <nav ref={menuRef} className="menu menu_screen_small">
           <button className="menu__button" onClick={closeMenu}>
             <img
               className="menu__button-close"
